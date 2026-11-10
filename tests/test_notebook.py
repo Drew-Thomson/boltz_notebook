@@ -87,7 +87,7 @@ class NotebookTests(unittest.TestCase):
         self.namespace.update(
             input_path=input_path,
             out_dir=str(root),
-            torch=SimpleNamespace(cuda=SimpleNamespace(is_available=lambda: True)),
+            cuda_available=lambda: True,
             subprocess=subprocess,
             Path=Path,
             msa_auth=auth,

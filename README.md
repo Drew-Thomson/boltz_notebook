@@ -19,4 +19,4 @@ Boltz reuses preprocessed inputs by name. When changing a YAML, MSA, template, o
 
 Predictions and input sequences may be sensitive. Colab, the selected MSA server, notebook output, downloaded archives, and any mounted Drive storage are subject to their respective privacy policies. Do not save credentials in the notebook: authenticated MSA server secrets are requested interactively instead.
 
-The notebook installs `boltz[cuda]==2.2.1` for a reproducible CLI. It requires Python 3.10–3.12 and downloads model weights on first use. If Colab changes its runtime or dependencies, select a compatible runtime or update the notebook and re-check the options against the new Boltz version.
+The notebook installs `boltz[cuda]==2.2.1` for a reproducible CLI. It requires Python 3.10–3.12 (the notebook creates a Python 3.12 virtual environment with `uv`, so the Colab default Python does not matter) and downloads model weights on first use. If Colab changes its runtime or dependencies, select a compatible runtime or update the notebook and re-check the options against the new Boltz version.
